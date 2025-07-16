@@ -1,4 +1,8 @@
 import { Geist, Geist_Mono } from "next/font/google";
+import Image from "next/image";
+import Link from "next/link";
+import Category from "./assets/images/header/categories.png";
+import Logo from "./assets/images/header/logo.png";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -22,7 +26,55 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <nav>
+          <div className="bg-secondary py-[22px]">
+            <div className="container max-w-[1400px] mx-auto">
+              <div className="flex justify-between items-center font-semibold text-[14px]">
+                <div className="flex gap-6">
+                  <Link href="/">
+                    <Image src={Logo} alt="logo" />
+                  </Link>
+                  <div className="flex items-center gap-2">
+                    <Image src={Category} alt="logo" />
+                    <p className="text-primary">Categories</p>
+                  </div>
+                </div>
+                <div>
+                  <ul className="flex gap-6 items-center">
+                    <li className="hover:text-primary transition">
+                      <Link href="#">BECOME A SELLER</Link>
+                    </li>
+                    <li className="hover:text-primary transition">
+                      <Link href="/login">LOGIN</Link>
+                    </li>
+                    <li className="py-[10px] px-[20px] bg-primary rounded-full hover:bg-gray-100 hover:text-primary transition">
+                      <Link href="/signup">Registration</Link>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
         {children}
+        <footer>
+          <div className="bg-secondary py-[22px]">
+            <div className="container max-w-[1400px] mx-auto">
+              <div className="flex justify-between gap-[220px] py-[45px]">
+                <h1 className="font-bold text-[32px]">Reach Your Requirement Goals Right on Schedule</h1>
+                <div className="">
+                  <p className="text-[16px] font-normal text-gray-300 mb-[24px]">
+                    Sign up, complete your profile, and start browsing projects.
+                    Submit proposals and communicate with clients to get hired.
+                  </p>
+                  <button className="bg-primary px-[24px] py-[9px] rounded-full text-[14px] font-semibold hover:bg-gray-100 hover:text-gray-900 transition cursor-pointer">
+                    Apply Now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
       </body>
     </html>
   );

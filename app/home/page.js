@@ -1,0 +1,285 @@
+"use client";
+
+import Image from "next/image";
+import Level from "../assets/images/job-listing/level.png";
+import Location from "../assets/images/job-listing/location.png";
+import People from "../assets/images/job-listing/person.png";
+import Search from "../components/search";
+
+export default function Home() {
+  return (
+    <>
+      <div className="bg-secondary py-[92px]">
+        <Search />
+      </div>
+      <div className="container mx-auto max-w-[1400px]">
+        <div className="py-[137px]">
+          <div>
+            <h1 className="font-bold text-[32px] text-gray-600 mb-[30px]">
+              5 search result(s) found
+            </h1>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-[30px]">
+            {/* Card start */}
+            <div className="pl-[20px] pr-[40px] pt-[24px] pb-[33px] bg-[#ffffff] hover:drop-shadow-xl transition rounded-b-xl">
+              <p className="text-[14px] font-normal text-gray-400">
+                Apr 30, 2024
+              </p>
+              <h2 className="text-[20px] font-bold text-gray-500 pt-[9px] pb-[22px]">
+                Website Design and Front-End Development
+              </h2>
+              <div className="flex justify-between items-center px-[22px] py-[11px] bg-gray-100 rounded text-gray-400">
+                <p className="text-[14px] font-normal text-gray-400">
+                  Fixed price project
+                </p>
+                <div className="flex text-[14px] font-semibold text-gray-500">
+                  <p>$1200</p>
+                  <p>-</p>
+                  <p>$1400</p>
+                </div>
+              </div>
+              <p className="text-[14px] font-normal text-gray-500 pt-[20px] pb-[34px]">
+                In this role, you will be responsible for conducting
+                comprehensive SEO audits and implementing strategies to optimize
+                websites...
+              </p>
+              <div className="flex gap-[10px]">
+                <div className="flex items-center gap-[5px] bg-[#FAF7FF] p-[5px] rounded-full">
+                  <Image src={Location} alt="icon" />
+                  <p className="text-[#9747FF]">Remote</p>
+                </div>
+                <div className="flex items-center gap-[5px] bg-[#FFF5F5] p-[5px] rounded-full">
+                  <Image src={Level} alt="icon" />
+                  <p className="text-[#DB3131]">Senior Level</p>
+                </div>
+                <div className="flex items-center gap-[5px] bg-[#E9FFEE] p-[5px] rounded-full">
+                  <Image src={People} alt="icon" />
+                  <p className="text-[#05AF2B]">Freelancer</p>
+                </div>
+              </div>
+              <div>
+                <ul className="flex justify-between items-center pt-[34px] pb-[16px]">
+                  <li className="bg-gray-100 rounded-full py-[4px] px-[16px] text-gray-900 text-[14px] font-semibold">
+                    App Design
+                  </li>
+                  <li className="bg-gray-100 rounded-full py-[4px] px-[16px] text-gray-900 text-[14px] font-semibold">
+                    Art Genaration
+                  </li>
+                  <li className="bg-gray-100 rounded-full py-[4px] px-[16px] text-gray-900 text-[14px] font-semibold">
+                    Illustration
+                  </li>
+                </ul>
+              </div>
+              <div className="h-[2px] bg-gray-100"></div>
+              <div className="flex gap-[5px] mt-[16px] mb-[20px]">
+                <p className="text-[14px] font-normal text-gray-200">
+                  Posted by
+                </p>
+                <p className="text-[14px] font-semibold text-gray-800">
+                  Eamman Olio
+                </p>
+              </div>
+              <button className="bg-gray-900 px-[24px] py-[9px] rounded-full text-[14px] font-semibold hover:bg-primary transition cursor-pointer">
+                Apply Now
+              </button>
+            </div>
+            {/* Card end */}
+            {/* Card start */}
+            <div className="pl-[20px] pr-[40px] pt-[24px] pb-[33px] bg-[#ffffff] hover:drop-shadow-xl transition rounded-b-xl">
+              <p className="text-[14px] font-normal text-gray-400">
+                Apr 30, 2024
+              </p>
+              <h2 className="text-[20px] font-bold text-gray-500 pt-[9px] pb-[22px]">
+                Website Design and Front-End Development
+              </h2>
+              <div className="flex justify-between items-center px-[22px] py-[11px] bg-gray-100 rounded text-gray-400">
+                <p className="text-[14px] font-normal text-gray-400">
+                  Fixed price project
+                </p>
+                <div className="flex text-[14px] font-semibold text-gray-500">
+                  <p>$1200</p>
+                  <p>-</p>
+                  <p>$1400</p>
+                </div>
+              </div>
+              <p className="text-[14px] font-normal text-gray-500 pt-[20px] pb-[34px]">
+                In this role, you will be responsible for conducting
+                comprehensive SEO audits and implementing strategies to optimize
+                websites...
+              </p>
+              <div className="flex gap-[10px]">
+                <div className="flex items-center gap-[5px] bg-[#FAF7FF] p-[5px] rounded-full">
+                  <Image src={Location} alt="icon" />
+                  <p className="text-[#9747FF]">Remote</p>
+                </div>
+                <div className="flex items-center gap-[5px] bg-[#FFF5F5] p-[5px] rounded-full">
+                  <Image src={Level} alt="icon" />
+                  <p className="text-[#DB3131]">Senior Level</p>
+                </div>
+                <div className="flex items-center gap-[5px] bg-[#E9FFEE] p-[5px] rounded-full">
+                  <Image src={People} alt="icon" />
+                  <p className="text-[#05AF2B]">Freelancer</p>
+                </div>
+              </div>
+              <div>
+                <ul className="flex justify-between items-center pt-[34px] pb-[16px]">
+                  <li className="bg-gray-100 rounded-full py-[4px] px-[16px] text-gray-900 text-[14px] font-semibold">
+                    App Design
+                  </li>
+                  <li className="bg-gray-100 rounded-full py-[4px] px-[16px] text-gray-900 text-[14px] font-semibold">
+                    Art Genaration
+                  </li>
+                  <li className="bg-gray-100 rounded-full py-[4px] px-[16px] text-gray-900 text-[14px] font-semibold">
+                    Illustration
+                  </li>
+                </ul>
+              </div>
+              <div className="h-[2px] bg-gray-100"></div>
+              <div className="flex gap-[5px] mt-[16px] mb-[20px]">
+                <p className="text-[14px] font-normal text-gray-200">
+                  Posted by
+                </p>
+                <p className="text-[14px] font-semibold text-gray-800">
+                  Eamman Olio
+                </p>
+              </div>
+              <button className="bg-gray-900 px-[24px] py-[9px] rounded-full text-[14px] font-semibold hover:bg-primary transition cursor-pointer">
+                Apply Now
+              </button>
+            </div>
+            {/* Card end */}
+            {/* Card start */}
+            <div className="pl-[20px] pr-[40px] pt-[24px] pb-[33px] bg-[#ffffff] hover:drop-shadow-xl transition rounded-b-xl">
+              <p className="text-[14px] font-normal text-gray-400">
+                Apr 30, 2024
+              </p>
+              <h2 className="text-[20px] font-bold text-gray-500 pt-[9px] pb-[22px]">
+                Website Design and Front-End Development
+              </h2>
+              <div className="flex justify-between items-center px-[22px] py-[11px] bg-gray-100 rounded text-gray-400">
+                <p className="text-[14px] font-normal text-gray-400">
+                  Fixed price project
+                </p>
+                <div className="flex text-[14px] font-semibold text-gray-500">
+                  <p>$1200</p>
+                  <p>-</p>
+                  <p>$1400</p>
+                </div>
+              </div>
+              <p className="text-[14px] font-normal text-gray-500 pt-[20px] pb-[34px]">
+                In this role, you will be responsible for conducting
+                comprehensive SEO audits and implementing strategies to optimize
+                websites...
+              </p>
+              <div className="flex gap-[10px]">
+                <div className="flex items-center gap-[5px] bg-[#FAF7FF] p-[5px] rounded-full">
+                  <Image src={Location} alt="icon" />
+                  <p className="text-[#9747FF]">Remote</p>
+                </div>
+                <div className="flex items-center gap-[5px] bg-[#FFF5F5] p-[5px] rounded-full">
+                  <Image src={Level} alt="icon" />
+                  <p className="text-[#DB3131]">Senior Level</p>
+                </div>
+                <div className="flex items-center gap-[5px] bg-[#E9FFEE] p-[5px] rounded-full">
+                  <Image src={People} alt="icon" />
+                  <p className="text-[#05AF2B]">Freelancer</p>
+                </div>
+              </div>
+              <div>
+                <ul className="flex justify-between items-center pt-[34px] pb-[16px]">
+                  <li className="bg-gray-100 rounded-full py-[4px] px-[16px] text-gray-900 text-[14px] font-semibold">
+                    App Design
+                  </li>
+                  <li className="bg-gray-100 rounded-full py-[4px] px-[16px] text-gray-900 text-[14px] font-semibold">
+                    Art Genaration
+                  </li>
+                  <li className="bg-gray-100 rounded-full py-[4px] px-[16px] text-gray-900 text-[14px] font-semibold">
+                    Illustration
+                  </li>
+                </ul>
+              </div>
+              <div className="h-[2px] bg-gray-100"></div>
+              <div className="flex gap-[5px] mt-[16px] mb-[20px]">
+                <p className="text-[14px] font-normal text-gray-200">
+                  Posted by
+                </p>
+                <p className="text-[14px] font-semibold text-gray-800">
+                  Eamman Olio
+                </p>
+              </div>
+              <button className="bg-gray-900 px-[24px] py-[9px] rounded-full text-[14px] font-semibold hover:bg-primary transition cursor-pointer">
+                Apply Now
+              </button>
+            </div>
+            {/* Card end */}
+            {/* Card start */}
+            <div className="pl-[20px] pr-[40px] pt-[24px] pb-[33px] bg-[#ffffff] hover:drop-shadow-xl transition rounded-b-xl">
+              <p className="text-[14px] font-normal text-gray-400">
+                Apr 30, 2024
+              </p>
+              <h2 className="text-[20px] font-bold text-gray-500 pt-[9px] pb-[22px]">
+                Website Design and Front-End Development
+              </h2>
+              <div className="flex justify-between items-center px-[22px] py-[11px] bg-gray-100 rounded text-gray-400">
+                <p className="text-[14px] font-normal text-gray-400">
+                  Fixed price project
+                </p>
+                <div className="flex text-[14px] font-semibold text-gray-500">
+                  <p>$1200</p>
+                  <p>-</p>
+                  <p>$1400</p>
+                </div>
+              </div>
+              <p className="text-[14px] font-normal text-gray-500 pt-[20px] pb-[34px]">
+                In this role, you will be responsible for conducting
+                comprehensive SEO audits and implementing strategies to optimize
+                websites...
+              </p>
+              <div className="flex gap-[10px]">
+                <div className="flex items-center gap-[5px] bg-[#FAF7FF] p-[5px] rounded-full">
+                  <Image src={Location} alt="icon" />
+                  <p className="text-[#9747FF]">Remote</p>
+                </div>
+                <div className="flex items-center gap-[5px] bg-[#FFF5F5] p-[5px] rounded-full">
+                  <Image src={Level} alt="icon" />
+                  <p className="text-[#DB3131]">Senior Level</p>
+                </div>
+                <div className="flex items-center gap-[5px] bg-[#E9FFEE] p-[5px] rounded-full">
+                  <Image src={People} alt="icon" />
+                  <p className="text-[#05AF2B]">Freelancer</p>
+                </div>
+              </div>
+              <div>
+                <ul className="flex justify-between items-center pt-[34px] pb-[16px]">
+                  <li className="bg-gray-100 rounded-full py-[4px] px-[16px] text-gray-900 text-[14px] font-semibold">
+                    App Design
+                  </li>
+                  <li className="bg-gray-100 rounded-full py-[4px] px-[16px] text-gray-900 text-[14px] font-semibold">
+                    Art Genaration
+                  </li>
+                  <li className="bg-gray-100 rounded-full py-[4px] px-[16px] text-gray-900 text-[14px] font-semibold">
+                    Illustration
+                  </li>
+                </ul>
+              </div>
+              <div className="h-[2px] bg-gray-100"></div>
+              <div className="flex gap-[5px] mt-[16px] mb-[20px]">
+                <p className="text-[14px] font-normal text-gray-200">
+                  Posted by
+                </p>
+                <p className="text-[14px] font-semibold text-gray-800">
+                  Eamman Olio
+                </p>
+              </div>
+              <button className="bg-gray-900 px-[24px] py-[9px] rounded-full text-[14px] font-semibold hover:bg-primary transition cursor-pointer">
+                Apply Now
+              </button>
+            </div>
+            {/* Card end */}
+          </div>
+        </div>
+      </div>
+    </>
+  );
+}
